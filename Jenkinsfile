@@ -34,7 +34,7 @@ pipeline {
     }
     post{
         always{
-            echo 'Docker stop application!'
+            echo 'Docker stop application....!'
             sh 'docker stop flask-practice'
             notificationSend()
             googleChatNotifation()
